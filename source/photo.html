@@ -24,7 +24,7 @@
             <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -150,6 +150,48 @@
           </article>
         </div>
       </section>
+
+      <section class="photo-load">
+        <div class="photo-load__intro">
+          <p class="photo-load__intro-text">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+        <h2 class="visually-hidden">Загрузка фотографии</h2>
+        <form class="photo-load__editor editor" action="https://echo.htmlacademy.ru" method="post">
+          <a href="#" class="editor__link-full-version">
+            <img class="photo-load__image" src="https://via.placeholder.com/150x150" alt="Загрузить фото">
+          </a>
+          <div class="editor__controls">
+            <ul class="editor__tools">
+              <li class="editor__tools-item">
+                <label for="cadr" class="editor__radio editor__label--cadr">Кадрирование
+                  <input class="editor__radio visually-hidden" type="radio" name="filter" id="cadr" value="cadr" checked>
+                </label>
+              </li>
+              <li class="editor__tools-item">
+                <label for="fill" class="editor__radio editor__label--fill">Заливка
+                  <input class="editor__radio visually-hidden" type="radio" name="fill" id="fill" value="fill">
+                </label>
+              </li>
+              <li class="editor__tools-item">
+                <label for="fill" class="editor__radio editor__label--contrast">Контраст
+                  <input class="editor__radio visually-hidden" type="radio" name="contrast" id="contrast" value="contrast">
+                </label>
+              </li>
+            </ul>
+            <!-- Скролл бар -->
+            <div class="editor__scroll-bar scroll-bar">
+              <div class="scroll-bar__range">
+                <div class="scroll-bar__toggle"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Кнопки отправки -->
+          <div class="editor__buttons">
+            <button class="editor__button editor__button--submit" type="submit">Запостить</button>
+            <button class="editor__button editor__button--cancel" type="reset">Отмена</button>
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">
@@ -173,7 +215,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
-          <a class="copyright__logo-link" href="https://htmlacademy.ru/" aria-label="ссылка на HTML Academy">
+          <a class="copyright__logo-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="ссылка на HTML Academy">
             <img class="copyright__logo-item" src="https://via.placeholder.com/150x150" alt="логотип HTML Academy">
           </a>
         </div>
