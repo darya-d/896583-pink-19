@@ -77,3 +77,42 @@
   font-weight: 300;
   line-height: 1.71;
 }
+
+.advantages__text {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: $blue-dark;
+}
+
+.advantages__text:first-child {
+  margin-bottom: 10px;
+}
+
+.advantages__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 30px;
+  background-color: $grey-light;
+}
+
+.advantages__item-title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.advantages__item-text {
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.advantages__image {
+  text-align: center;
+  height: 278px;
+  overflow: hidden;
+  background-color: $grey-light;
+}
