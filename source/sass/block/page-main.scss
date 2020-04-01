@@ -116,3 +116,50 @@
   overflow: hidden;
   background-color: $grey-light;
 }
+
+.contacts__wrapper {
+  padding: 50px 30px;
+}
+
+.contacts__title {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.contacts__heading {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.contacts__text {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  margin: 0;
+  color: $pink;
+}
+
+// .contacts__email .contacts__text:hover {
+//   color: $blue-dark;
+//   border-bottom: 1px solid $blue-dark;
+// }
+
+// .contacts__email .contacts__text:active {
+//   color: $blue-dark;
+//   opacity: 0.3;
+// }
+
+.contacts__map {
+  overflow: hidden;
+  background-color: #eae6dd;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  background-image: url("../img/bg-map-mobile-cut@1x.png");
+}
