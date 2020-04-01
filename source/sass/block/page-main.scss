@@ -1,4 +1,6 @@
 // page-main.html - блок мэйн, единый для всех страниц
+
+// *Intro
 .intro {
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center -65px;
   background-color: $blue-dark-intro;
@@ -16,6 +18,34 @@
   color: $white;
 }
 
+.intro-photo,
+.intro-form {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center -65px;
+  background-color: $blue-dark-intro;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 65px;
+}
+
+.intro-photo__title,
+.intro-form__title {
+  margin: 0;
+  padding: 20px 30px 20px 30px;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: $white;
+}
+
+.intro-form {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center -65px;
+  background-color: $blue-dark-intro;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+
+// *Download
 .download__button {
   color: $white;
   font-size: 18px;
@@ -78,6 +108,7 @@
   line-height: 1.71;
 }
 
+// *Advantages
 .advantages__text {
   font-size: 24px;
   font-weight: 300;
@@ -117,6 +148,7 @@
   background-color: $grey-light;
 }
 
+// *Contacts
 .contacts__wrapper {
   padding: 50px 30px;
 }
