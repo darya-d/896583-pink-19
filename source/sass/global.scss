@@ -7,10 +7,10 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: $font-openSans;
+  font-family: $font-openSans, sans-serif;
   font-weight: 300;
   font-size: 14px;
-  color: #ffffff;
+  background-color: $white;
 }
 
 img {
