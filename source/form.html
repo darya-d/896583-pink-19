@@ -37,78 +37,92 @@
           <h1 class="intro-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
       </section>
-
+      <!-- *Форма  -->
       <section class="form-contest">
         <h2 class="visually-hidden">Форма пользователя для участия в конкурсе</h2>
         <p class="form-contest__text-intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         <form class="form-contest__form form" action="https://echo.htmlacademy.ru" method="post">
           <!-- ФИО -->
           <div class="form__user">
-            <label class="form__label" for="last-name">Фамилия:</label>
-            <input class="form__input" type="text" name="last name" id="last-name" placeholder="Укажите фамилию *" >
-            <label class="form__label" for="first-name">Имя:</label>
-            <input class="form__input" type="text" name="first name" id="first-name" placeholder="Введите ваше имя *">
-            <label class="form__label" for="patronymic">Отчество:</label>
-            <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+            <div class="container">
+              <label class="form__label" for="last-name">Фамилия:</label>
+              <input class="form__input" type="text" name="last name" id="last-name" placeholder="Укажите фамилию *" >
+              <label class="form__label" for="first-name">Имя:</label>
+              <input class="form__input" type="text" name="first name" id="first-name" placeholder="Введите ваше имя *">
+              <label class="form__label" for="patronymic">Отчество:</label>
+              <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+            </div>
           </div>
           <!-- Достижения -->
           <div class="form__achievements">
-            <label class="form__label" for="shark">
-              <input class="form__checkbox" type="checkbox" name="shark" id="shark" checked>
-              <span>Сделал селфи с акулой</span>
-            </label>
-            <label class="form__label" for="sunburn">
-              <input class="form__checkbox" type="checkbox" name="sunburn" id="sunburn" checked>
-              <span>Обгорел на пляже</span>
-            </label>
-            <label class="form__label" for="chuck-norris">
-              <input class="form__checkbox" type="checkbox" name="chuck-norris" id="chuck-norris">
-              <span>Видел Чака Норриса</span>
-            </label>
-            <label class="form__label" for="souvenirs">
-              <input class="form__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
-              <span>Накупил сувениров</span>
-            </label>
-            <label class="form__label" for="tower">
-              <input class="form__checkbox" type="checkbox" name="tower" id="tower" checked>
-              <span>Удержал башню</span>
-            </label>
-            <label class="form__label" for="hotel">
-              <input class="form__checkbox" type="checkbox" name="hotel" id="hotel">
-              <span>Разгромил отель</span>
-            </label>
+            <div class="container">
+              <h3 class="form__achievements-title">С каким приложением путешествовали?</h3>
+              <label class="form__label" for="shark">
+                <input class="form__checkbox" type="checkbox" name="shark" id="shark" checked>
+                <span>Сделал селфи с акулой</span>
+              </label>
+              <label class="form__label" for="sunburn">
+                <input class="form__checkbox" type="checkbox" name="sunburn" id="sunburn" checked>
+                <span>Обгорел на пляже</span>
+              </label>
+              <label class="form__label" for="chuck-norris">
+                <input class="form__checkbox" type="checkbox" name="chuck-norris" id="chuck-norris">
+                <span>Видел Чака Норриса</span>
+              </label>
+              <label class="form__label" for="souvenirs">
+                <input class="form__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
+                <span>Накупил сувениров</span>
+              </label>
+              <label class="form__label" for="tower">
+                <input class="form__checkbox" type="checkbox" name="tower" id="tower" checked>
+                <span>Удержал башню</span>
+              </label>
+              <label class="form__label" for="hotel">
+                <input class="form__checkbox" type="checkbox" name="hotel" id="hotel">
+                <span>Разгромил отель</span>
+              </label>
+            </div>
           </div>
           <!-- Контакты -->
           <div class="form__contacts">
-            <label class="form__label" for="telephone">Номер телефона:</label>
-            <input class="form__input" type="tel" name="telephone number" id="telephone" placeholder="Номер, пожалуйста">
-            <label class="form__label" for="email">Адрес почты:</label>
-            <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту">
+            <div class="container">
+              <label class="form__label" for="telephone">Номер телефона:</label>
+              <input class="form__input" type="tel" name="telephone number" id="telephone" placeholder="Номер, пожалуйста">
+              <label class="form__label" for="email">Адрес почты:</label>
+              <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту">
+            </div>
           </div>
           <!-- Платформа приложения -->
           <div class="form__app">
-            <label class="form__label" for="ios">
-              <input class="form__radio" type="radio" name="ios" id="ios" checked>
-              <span>Pink для IOS</span>
-            </label>
-            <label class="form__label" for="android">
-              <input class="form__radio" type="radio" name="android" id="android">
-              <span>Pink на Android</span>
-            </label>
-            <label class="form__label" for="windows">
-              <input class="form__radio" type="radio" name="windows" id="windows">
-              <span>Windows Phone</span>
-            </label>
+            <div class="container">
+              <h3 class="form__app-title">С каким приложением путешествовали?</h3>
+              <label class="form__label" for="ios">
+                <input class="form__radio" type="radio" name="ios" id="ios" checked>
+                <span>Pink для IOS</span>
+              </label>
+              <label class="form__label" for="android">
+                <input class="form__radio" type="radio" name="android" id="android">
+                <span>Pink на Android</span>
+              </label>
+              <label class="form__label" for="windows">
+                <input class="form__radio" type="radio" name="windows" id="windows">
+                <span>Windows Phone</span>
+              </label>
+            </div>
           </div>
           <!-- Эмоции -->
           <div class="form__emotions">
-            <label class="form__label" for="emotions">Опишите свои эмоции</label>
-            <input class="form__input" type="textarea" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях" >
+            <div class="container">
+              <label class="form__label" for="emotions">Опишите свои эмоции</label>
+              <textarea class="form__textarea" name="emotions" id="emotions" rows="8" cols="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
           </div>
           <!-- Кнопка отправки формы -->
           <div class="form__submit">
-            <button class="button form__submit-button" type="submit">Отправить форму</button>
-            <p class="form__submit-text"><span class="form__submit-text--red">*</span> — обязательные поля</p>
+            <div class="container">
+              <button class="button form__submit-button" type="submit">Отправить форму</button>
+              <p class="form__submit-text"><span class="form__submit-text--red">*</span> — обязательные поля</p>
+            </div>
           </div>
         </form>
       </section>

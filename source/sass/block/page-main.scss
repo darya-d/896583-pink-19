@@ -305,13 +305,156 @@
 }
 
 .editor__button--cancel {
-  color: $blue-dark;
-  border: 2px solid $blue-dark;
+  color: #dddee0;
+  border: 3px solid #dddee0;
+
+  &:hover {
+    color: #ced1d4;
+    border: 3px solid #b6babf;
+  }
 
   &:active {
-    color: white;
-    background-color: $blue-dark;
+    color: #ced1d4;
+    background-color: #b6babf;
   }
+}
+
+// *Form-contest
+.form-contest__text-intro {
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: center;
+  padding: 25px 30px;
+}
+
+.form-contest {
+  margin: 0 auto;
+}
+
+.form__label {
+  display: block;
+  font-size: 14px;
+  line-height: 2.14;
+  text-transform: uppercase;
+  color: $pink;
+  margin-bottom: 5px;
+  padding-left: 22px;
+}
+
+.form__input {
+  box-sizing: border-box;
+  width: 280px;
+  height: 63px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border: solid 2px $grey-border-color;
+
+  &:hover {
+    border: 2px solid $black;
+  }
+
+  &:focus {
+    border: 2px solid $pink;
+    outline: none;
+  }
+}
+
+.form__user,
+.form__achievements,
+.form__contacts,
+.form__app,
+.form__emotions,
+.form__submit {
+  padding: 25px 0;
+}
+
+.form__achievements,
+.form__app {
+  background-color: $grey-light;
+}
+
+.form__app-title,
+.form__achievements-title {
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  color: $pink;
+  margin-bottom: 40px;
+}
+
+.form__app .form__label,
+.form__achievements .form__label {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: initial;
+  color: $blue-dark;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.form__emotions .form__label {
+  padding: 0;
+  text-align: center;
+}
+
+.form__radio {
+  margin-right: 20px;
+}
+
+.form__textarea {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 15px 19px;
+  border: 2px solid #e6e6e6;
+  box-sizing: border-box;
+
+
+  &:hover {
+    border: 2px solid $black;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $pink;
+  }
+}
+
+.form__submit-button {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  color: $white;
+  text-transform: uppercase;
+  border: none;
+  background-color: $green-btn;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $green-btn-hover;
+  }
+
+  &:active {
+    background-color: $green-btn-active;
+    color: $green-btn-active-text;
+  }
+}
+
+.form__submit-text {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__submit-text--red {
+  color: $pink;
 }
 
 // *Contacts
