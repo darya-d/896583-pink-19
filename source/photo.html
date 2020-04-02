@@ -39,115 +39,121 @@
       </section>
       <!-- *Галерея с карточками пользователей -->
       <section class="gallery">
-        <p class="gallery__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <div class="container">
+          <p class="gallery__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
         <!-- Карточка панорама дня -->
         <article class="gallery__card card-panorama">
           <h2 class="visually-hidden">Фотография пользователя, выбранное панорамой дня</h2>
           <div class="card-panorama__image">
             <a href="#" class="card-panorama__link">
-              <img class="card-panorama__bg" src="https://via.placeholder.com/150x150" alt="высокий горный мост">
+              <img class="card-panorama__bg" src="./img/panorama-mobile@1x.jpg" alt="высокий горный мост">
             </a>
             <p class="card-panorama__text-daily">Панорама дня</p>
           </div>
-          <div class="card-panorama__info">
-            <p class="card-panorama__user-name">Анна <span>(5 минут назад)</span> </p>
-            <p class="card-panorama__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <button class="card-panorama__heart-rate"></button>
-            <p class="card-panorama__likes">Нравится: 215</p>
+          <div class="container">
+            <div class="card-panorama__info">
+              <p class="card-panorama__user-name">Анна <span>(5 минут назад)</span> </p>
+              <p class="card-panorama__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <button class="card-panorama__heart-rate"></button>
+              <p class="card-panorama__likes">Нравится: 215</p>
+            </div>
           </div>
         </article>
         <!-- Карточки остальных пользователей -->
         <div class="gallery__wrapper">
-          <!-- Левон -->
-          <article class="gallery__card card">
-            <h2 class="visually-hidden">Фотография пользователя - Левон</h2>
-            <div class="card__image">
-              <a href="#" class="card__link">
-                <img class="card__bg" src="https://via.placeholder.com/150x150" alt="белый автомобиль">
-              </a>
-            </div>
-            <div class="card__info">
-              <p class="card__user-name">Левон <span>(5 часов назад)</span> </p>
-              <p class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <button class="card__heart-rate"></button>
-              <p class="card__likes">Нравится: 356</p>
-            </div>
-          </article>
-          <!-- Антон -->
-          <article class="gallery__card card">
-            <h2 class="visually-hidden">Фотография пользователя - Антон</h2>
-            <div class="card__image">
-              <a href="#" class="card__link">
-                <img class="card__bg" src="https://via.placeholder.com/150x150" alt="барабанная установка">
-              </a>
-            </div>
-            <div class="card__info">
-              <p class="card__user-name">Антон <span>(12 часов назад)</span> </p>
-              <p class="card__text">Соседи будут рады!</p>
-              <button class="card__heart-rate"></button>
-              <p class="card__likes">Нравится: 666</p>
-            </div>
-          </article>
-          <!-- Борис -->
-          <article class="gallery__card card">
-            <h2 class="visually-hidden">Фотография пользователя - Борис</h2>
-            <div class="card__image">
-              <a href="#" class="card__link">
-                <img class="card__bg" src="https://via.placeholder.com/150x150" alt="потолок высокого стеклянного здания">
-              </a>
-            </div>
-            <div class="card__info">
-              <p class="card__user-name">Борис <span>(20 часов назад)</span> </p>
-              <p class="card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <button class="card__heart-rate"></button>
-              <p class="card__likes">Нравится: 215</p>
-            </div>
-          </article>
-          <!-- Сергей -->
-          <article class="gallery__card card">
-            <h2 class="visually-hidden">Фотография пользователя - Сергей</h2>
-            <div class="card__image">
-              <a href="#" class="card__link">
-                <img class="card__bg" src="https://via.placeholder.com/150x150" alt="шатер с надписью Кубанская бахча">
-              </a>
-            </div>
-            <div class="card__info">
-              <p class="card__user-name">Сергей <span>(25 часов назад)</span> </p>
-              <p class="card__text">Самая кубанская в мире!</p>
-              <button class="card__heart-rate"></button>
-              <p class="card__likes">Нравится: 4</p>
-            </div>
-          </article>
-          <!-- Максим -->
-          <article class="gallery__card card">
-            <h2 class="visually-hidden">Фотография пользователя - Максим</h2>
-            <div class="card__image">
-              <a href="#" class="card__link">
-                <img class="card__bg" src="https://via.placeholder.com/150x150" alt="ноги, свисающие с высокой горы">
-              </a>
-            </div>
-            <div class="card__info">
-              <p class="card__user-name">Максим <span>(40 часов назад)</span> </p>
-              <p class="card__text">Где снег-то?</p>
-              <button class="card__heart-rate"></button>
-              <p class="card__likes">Нравится: 150</p>
-            </div>
-          </article>
-          <!-- Надежда -->
-          <article class="gallery__card card">
-            <h2 class="visually-hidden">Фотография пользователя - Надежда</h2>
-            <div class="card__image">
-              <a href="#" class="card__link">
-                <img class="card__bg" src="https://via.placeholder.com/150x150" alt="крыло самолета на фоне рассвета">
-              </a>
-            </div>
-            <div class="card__info">
-              <p class="card__user-name">Надежда <span>(45 часов назад)</span> </p>
-              <p class="card__text">Всем GM и взаимные лайки!</p>
-              <button class="card__heart-rate"></button>
-              <p class="card__likes">Нравится: 2560</p>
-            </div>
-          </article>
+          <div class="container">
+            <!-- Левон -->
+            <article class="gallery__card card">
+              <h2 class="visually-hidden">Фотография пользователя - Левон</h2>
+              <div class="card__image">
+                <a href="#" class="card__link">
+                  <img class="card__bg" src="./img/photo-car-mobile@1x.jpg" alt="белый автомобиль">
+                </a>
+              </div>
+              <div class="card__info">
+                <p class="card__user-name">Левон <span>(5 часов назад)</span> </p>
+                <p class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <button class="card__heart-rate"></button>
+                <p class="card__likes">Нравится: 356</p>
+              </div>
+            </article>
+            <!-- Антон -->
+            <article class="gallery__card card">
+              <h2 class="visually-hidden">Фотография пользователя - Антон</h2>
+              <div class="card__image">
+                <a href="#" class="card__link">
+                  <img class="card__bg" src="./img/photo-drumset-mobile@1x.jpg" alt="барабанная установка">
+                </a>
+              </div>
+              <div class="card__info">
+                <p class="card__user-name">Антон <span>(12 часов назад)</span> </p>
+                <p class="card__text">Соседи будут рады!</p>
+                <button class="card__heart-rate"></button>
+                <p class="card__likes">Нравится: 666</p>
+              </div>
+            </article>
+            <!-- Борис -->
+            <article class="gallery__card card">
+              <h2 class="visually-hidden">Фотография пользователя - Борис</h2>
+              <div class="card__image">
+                <a href="#" class="card__link">
+                  <img class="card__bg" src="./img/photo-window-mobile@1x.jpg" alt="потолок высокого стеклянного здания">
+                </a>
+              </div>
+              <div class="card__info">
+                <p class="card__user-name">Борис <span>(20 часов назад)</span> </p>
+                <p class="card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <button class="card__heart-rate"></button>
+                <p class="card__likes">Нравится: 215</p>
+              </div>
+            </article>
+            <!-- Сергей -->
+            <article class="gallery__card card">
+              <h2 class="visually-hidden">Фотография пользователя - Сергей</h2>
+              <div class="card__image">
+                <a href="#" class="card__link">
+                  <img class="card__bg" src="./img/photo-fair-mobile@1x.jpg" alt="шатер с надписью Кубанская бахча">
+                </a>
+              </div>
+              <div class="card__info">
+                <p class="card__user-name">Сергей <span>(25 часов назад)</span> </p>
+                <p class="card__text">Самая кубанская в мире!</p>
+                <button class="card__heart-rate"></button>
+                <p class="card__likes">Нравится: 4</p>
+              </div>
+            </article>
+            <!-- Максим -->
+            <article class="gallery__card card">
+              <h2 class="visually-hidden">Фотография пользователя - Максим</h2>
+              <div class="card__image">
+                <a href="#" class="card__link">
+                  <img class="card__bg" src="./img/photo-pov-mobile@1x.jpg" alt="ноги, свисающие с высокой горы">
+                </a>
+              </div>
+              <div class="card__info">
+                <p class="card__user-name">Максим <span>(40 часов назад)</span> </p>
+                <p class="card__text">Где снег-то?</p>
+                <button class="card__heart-rate"></button>
+                <p class="card__likes">Нравится: 150</p>
+              </div>
+            </article>
+            <!-- Надежда -->
+            <article class="gallery__card card">
+              <h2 class="visually-hidden">Фотография пользователя - Надежда</h2>
+              <div class="card__image">
+                <a href="#" class="card__link">
+                  <img class="card__bg" src="./img/photo-wing-mobile@1x.jpg" alt="крыло самолета на фоне рассвета">
+                </a>
+              </div>
+              <div class="card__info">
+                <p class="card__user-name">Надежда <span>(45 часов назад)</span> </p>
+                <p class="card__text">Всем GM и взаимные лайки!</p>
+                <button class="card__heart-rate"></button>
+                <p class="card__likes">Нравится: 2560</p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -157,38 +163,40 @@
         </div>
         <h2 class="visually-hidden">Загрузка фотографии</h2>
         <form class="photo-load__editor editor" action="https://echo.htmlacademy.ru" method="post">
-          <a href="#" class="editor__link-full-version">
-            <img class="photo-load__image" src="https://via.placeholder.com/150x150" alt="Загрузить фото">
-          </a>
-          <div class="editor__controls">
-            <ul class="editor__tools">
-              <li class="editor__tools-item">
-                <label for="cadr" class="editor__radio editor__label--cadr">Кадрирование
-                  <input class="editor__radio visually-hidden" type="radio" name="filter" id="cadr" value="cadr" checked>
-                </label>
-              </li>
-              <li class="editor__tools-item">
-                <label for="fill" class="editor__radio editor__label--fill">Заливка
-                  <input class="editor__radio visually-hidden" type="radio" name="fill" id="fill" value="fill">
-                </label>
-              </li>
-              <li class="editor__tools-item">
-                <label for="fill" class="editor__radio editor__label--contrast">Контраст
-                  <input class="editor__radio visually-hidden" type="radio" name="contrast" id="contrast" value="contrast">
-                </label>
-              </li>
-            </ul>
-            <!-- Скролл бар -->
-            <div class="editor__scroll-bar scroll-bar">
-              <div class="scroll-bar__range">
-                <div class="scroll-bar__toggle"></div>
+          <div class="container">
+            <a href="#" class="editor__link-full-version">
+              <img class="photo-load__image" src="./img/photo-road-mobile@1x.jpg" alt="Загрузить фото">
+            </a>
+            <div class="editor__controls">
+              <ul class="editor__tools">
+                <li class="editor__tools-item">
+                  <label for="crop" class="editor__label editor__label--crop">
+                    <input class="editor__radio visually-hidden" type="radio" name="filter" id="crop" value="crop" checked>
+                  </label>
+                </li>
+                <li class="editor__tools-item">
+                  <label for="fill" class="editor__label editor__label--fill">
+                    <input class="editor__radio visually-hidden" type="radio" name="fill" id="fill" value="fill">
+                  </label>
+                </li>
+                <li class="editor__tools-item">
+                  <label for="fill" class="editor__label editor__label--contrast">
+                    <input class="editor__radio visually-hidden" type="radio" name="contrast" id="contrast" value="contrast">
+                  </label>
+                </li>
+              </ul>
+              <!-- Скролл бар -->
+              <div class="editor__scroll-bar scroll-bar">
+                <div class="scroll-bar__range">
+                  <div class="scroll-bar__toggle"></div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- Кнопки отправки -->
-          <div class="editor__buttons">
-            <button class="editor__button editor__button--submit" type="submit">Запостить</button>
-            <button class="editor__button editor__button--cancel" type="reset">Отмена</button>
+            <!-- Кнопки отправки -->
+            <div class="editor__buttons">
+              <button class="editor__button editor__button--submit" type="submit">Запостить</button>
+              <button class="editor__button editor__button--cancel" type="reset">Отмена</button>
+            </div>
           </div>
         </form>
       </section>

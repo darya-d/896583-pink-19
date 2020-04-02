@@ -148,6 +148,172 @@
   background-color: $grey-light;
 }
 
+// *Gallery
+.gallery__title {
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: center;
+  padding: 30px 25px;
+}
+
+.gallery__card {
+  margin-bottom: 20px;
+}
+
+.card-panorama__text-daily {
+  max-width: 140px;
+  padding: 5px 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 2;
+  text-align: center;
+  color: $white;
+  background-color: $pink;
+}
+
+.gallery__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.card__bg,
+.card-panorama__bg {
+  min-width: 100%;
+}
+
+.card__info,
+.card-panorama__info {
+  padding: 10px 20px;
+  background-color: $grey-light;
+}
+
+.card__user-name,
+.card-panorama__user-name {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.card__user-name span,
+.card-panorama__user-name span {
+  font-size: 12px;
+  font-weight: 300;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.card__text,
+.card-panorama__text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.card__heart-rate,
+.card-panorama__heart-rate {
+  width: 13px;
+  height: 14px;
+  margin-right: 20px;
+  background: url("../img/icon-heart-pink.svg") no-repeat center;
+  border: none;
+  cursor: pointer;
+}
+
+.card__likes,
+.card-panorama__likes {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $pink;
+}
+
+// *Photo load
+.photo-load__editor {
+  padding: 20px 0 30px;
+  background-color: $grey-light;
+}
+
+.photo-load__intro-text {
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: center;
+  padding: 10px 25px 25px;
+}
+
+.photo-load__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.editor__tools {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
+}
+
+.editor__tools-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.editor__label {
+  display: block;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+}
+
+.editor__label--crop {
+  background-image: url("../img/icon-editor-crop.svg");
+}
+
+.editor__label--fill {
+  background-image: url("../img/icon-editor-fill.svg");
+}
+
+.editor__label--contrast {
+  background-image: url("../img/icon-editor-contrast.svg");
+}
+
+.editor__button {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 15px 35px;
+  border-radius: 50px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: $grey-light;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.editor__button--submit {
+  color: $pink;
+  border: 2px solid $pink;
+
+  &:hover {
+    color: $white;
+    background-color: $pink;
+  }
+}
+
+.editor__button--cancel {
+  color: $blue-dark;
+  border: 2px solid $blue-dark;
+
+  &:active {
+    color: white;
+    background-color: $blue-dark;
+  }
+}
+
 // *Contacts
 .contacts__wrapper {
   padding: 50px 30px;
