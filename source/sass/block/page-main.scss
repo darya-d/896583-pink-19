@@ -402,10 +402,72 @@
   text-align: center;
 }
 
-.form__radio {
-  margin-right: 20px;
+// Checkboxes
+input[type="checkbox"] {
+  display: none;
 }
 
+.form__achievements .form__label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 70px;
+}
+
+.form__achievements .form__label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  border-radius: 3px;
+  border: 2px solid $grey-border-color;
+  background-color: $white;
+}
+
+.form__achievements .form__label:hover::before {
+  border: 2px solid $black;
+}
+
+.form__achievements .form__label:active::before {
+  outline: none;
+  border: 2px solid $pink;
+}
+
+// Radio buttons
+input[type="radio"] {
+  display: none;
+}
+.form__app .form__label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 70px;
+}
+
+.form__app .form__label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  border-radius: 50%;
+  border: 2px solid $grey-border-color;
+  background-color: $white;
+}
+
+.form__app .form__label:hover::before {
+  border: 2px solid $black;
+}
+
+.form__app .form__label:active::before {
+  outline: none;
+  border: 2px solid $pink;
+}
+
+// Textarea
 .form__textarea {
   width: 100%;
   font-size: 18px;
@@ -413,7 +475,6 @@
   padding: 15px 19px;
   border: 2px solid #e6e6e6;
   box-sizing: border-box;
-
 
   &:hover {
     border: 2px solid $black;
@@ -456,6 +517,7 @@
 .form__submit-text--red {
   color: $pink;
 }
+
 
 // *Contacts
 .contacts__wrapper {
