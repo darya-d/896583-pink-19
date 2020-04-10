@@ -266,15 +266,34 @@
 }
 
 .editor__label--crop {
-  background-image: url("../img/icon-editor-crop.svg");
+  background-image: url("../img/icon-editor-crop-greyl.svg");
+
+  &:hover {
+    background-image: url("../img/icon-editor-crop-greyd.svg");
+  }
+  &:active{
+    background-image: url("../img/icon-editor-crop-pink.svg");
+  }
 }
 
 .editor__label--fill {
-  background-image: url("../img/icon-editor-fill.svg");
+  background-image: url("../img/icon-editor-fill-greyl.svg");
+  &:hover {
+    background-image: url("../img/icon-editor-fill-greyd.svg");
+  }
+  &:active{
+    background-image: url("../img/icon-editor-fill-pink.svg");
+  }
 }
 
 .editor__label--contrast {
-  background-image: url("../img/icon-editor-contrast.svg");
+  background-image: url("../img/icon-editor-contrast-greyl.svg");
+  &:hover {
+    background-image: url("../img/icon-editor-contrast-greyd.svg");
+  }
+  &:active{
+    background-image: url("../img/icon-editor-contrast-pink.svg");
+  }
 }
 
 .editor__button {
@@ -317,6 +336,43 @@
     color: #ced1d4;
     background-color: #b6babf;
   }
+}
+
+// Scroll bar
+.scroll-bar {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.scroll-bar__range {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  margin: 0 auto;
+  border-radius: 2.5px;
+  background-color: $black;
+  border: 0;
+}
+
+.scroll-bar__range::after {
+  content: "";
+  position: absolute;
+
+  top: -9px;
+  right: 30px;
+  width: 14px;
+  height: 14px;
+  border: solid 2px $pink;
+  border-radius: 50%;
+  background-color: $grey-light;
+  cursor: pointer;
+}
+
+.scroll-bar__range:active::after {
+  content: "";
+
+  background-color: $pink;
+  border-color: $pink;
 }
 
 // *Form-contest
