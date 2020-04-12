@@ -64,10 +64,12 @@
   border-radius: 50px;
   display: block;
   margin-bottom: 30px;
+
   &:hover {
     color: $pink;
     background-color: $white;
   }
+
   &:active {
     color: transparentize($pink, 0.3);
   }
@@ -286,30 +288,36 @@
 
 .editor__label--crop {
   background-image: url("../img/icon-editor-crop-greyl.svg");
+
   &:hover {
     background-image: url("../img/icon-editor-crop-greyd.svg");
   }
-  &:active{
+
+  &:active {
     background-image: url("../img/icon-editor-crop-pink.svg");
   }
 }
 
 .editor__label--fill {
   background-image: url("../img/icon-editor-fill-greyl.svg");
+
   &:hover {
     background-image: url("../img/icon-editor-fill-greyd.svg");
   }
-  &:active{
+
+  &:active {
     background-image: url("../img/icon-editor-fill-pink.svg");
   }
 }
 
 .editor__label--contrast {
   background-image: url("../img/icon-editor-contrast-greyl.svg");
+
   &:hover {
     background-image: url("../img/icon-editor-contrast-greyd.svg");
   }
-  &:active{
+
+  &:active {
     background-image: url("../img/icon-editor-contrast-pink.svg");
   }
 }
