@@ -7,8 +7,8 @@
   display: block;
   width: 148px;
   height: 40px;
-  margin: 55px auto 0;
-  margin-bottom: 30px;
+  margin: 45px auto 0;
+  margin-bottom: 39px;
   overflow: hidden;
   background: url("../img/logo-pink-blue-mobile.svg") no-repeat center center;
 
@@ -28,7 +28,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 38px;
 }
 
 .social__item:not(:last-child) {
@@ -67,14 +67,19 @@
 
 // *Copyright
 .copyright {
-  padding-bottom: 40px;
   display: flex;
   justify-content: center;
 }
 
+.copyright__text {
+  display: inline-block;
+  padding-top: 7px;
+  margin-right: 14px;
+  font-weight: normal;
+}
+
 .copyright__logo {
   display: inline-block;
-  margin-left: 20px;
   width: 30px;
   height: 35px;
   overflow: hidden;
