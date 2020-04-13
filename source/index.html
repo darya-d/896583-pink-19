@@ -81,7 +81,43 @@
         <section class="feedback">
           <div class="container">
             <h2 class="visually-hidden">Отзывы</h2>
-            <div class="feedback__slider"></div>
+            <div class="feedback__wrapper slider">
+              <input class="slider__button slider__button--1 visually-hidden" type="radio" id="button-1" name="toggle" checked>
+              <input class="slider__button slider__button--2 visually-hidden" type="radio" id="button-2" name="toggle">
+              <input class="slider__button slider__button--3 visually-hidden" type="radio" id="button-3" name="toggle">
+              <ul class="feedback__list slider__list">
+                <li class="feedback__item slider__item">
+                  <div class="feedback__item-wrapper">
+                    <h3 class="feedback__title">Николай Петров</h3>
+                    <span class="feedback__id">25 лет, водитель трамвая</span>
+                    <p class="feedback__text"><span class="feedback__quote-hide">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="feedback__quote-hide">»</span></p>
+                  </div>
+                </li>
+                <li class="feedback__item slider__item">
+                  <div class="feedback__item-wrapper">
+                    <h3 class="feedback__title">Петр Николаев</h3>
+                    <span class="feedback__id">25 лет, водитель трамвая</span>
+                    <p class="feedback__text"><span class="feedback__quote-hide">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="feedback__quote-hide">»</span></p>
+                  </div>
+                </li>
+                <li class="feedback__item slider__item">
+                  <div class="feedback__item-wrapper">
+                    <h3 class="feedback__title">Николай Сидоров</h3>
+                    <span class="feedback__id">25 лет, водитель трамвая</span>
+                    <p class="feedback__text"><span class="feedback__quote-hide">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="feedback__quote-hide">»</span></p>
+                  </div>
+                </li>
+              </ul>
+              <div class="feedback__controls">
+                <button class="feedback__button-prev">Предыдущий отзыв</button>
+                <button class="feedback__button-next">Следующий отзыв</button>
+              </div>
+              <div class="slider__controls">
+                <label for="button-1"></label>
+                <label for="button-2"></label>
+                <label for="button-3"></label>
+              </div>
+            </div>
           </div>
         </section>
         <!-- *Тарифы на подписку -->

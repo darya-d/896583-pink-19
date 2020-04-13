@@ -197,6 +197,140 @@
   background-color: $grey-light;
 }
 
+// *Feedback
+.feedback {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.feedback__wrapper {
+  padding-bottom: 28px;
+}
+
+.feedback__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feedback__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  padding: 43px 0 0 0;
+  margin: 0;
+}
+
+.feedback__id {
+  display: none;
+}
+
+.feedback__text {
+  font-style: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 20px 9px;
+}
+
+.feedback__controls {
+  display: none;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__button--1:checked ~ .slider__list .slider__item:first-child {
+  display: block;
+}
+
+.slider__button--2:checked ~ .slider__list .slider__item:nth-child(2) {
+  display: block;
+}
+
+.slider__button--3:checked ~ .slider__list .slider__item:nth-child(3) {
+  display: block;
+}
+
+.slider__button--4:checked ~ .tariff-plan__list {
+  transform: translateX(48%);
+  transition: 0.5s;
+}
+
+.slider__button--5:checked ~ .tariff-plan__list {
+  transform: translateX(0%);
+  transition: 0.5s;
+}
+
+.slider__button--6:checked ~ .tariff-plan__list {
+  transform: translateX(-48%);
+  transition: 0.5s;
+}
+
+.slider__controls {
+  text-align: center;
+}
+
+.slider__controls label {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 0 4px;
+  background-color: #bdc1c7;
+  border: 3px solid $white;
+  vertical-align: middle;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
+}
+
+.slider__controls--tariff-plan {
+  padding-top: 33px;
+  padding-bottom: 43px;
+  text-align: center;
+}
+
+.slider__controls--tariff-plan label {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 0 4px;
+  background-color: #bdc1c7;
+  border: 3px solid $grey-light;
+  vertical-align: middle;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
+}
+
+.slider__button--1:checked ~ .slider__controls label[for="button-1"],
+.slider__button--2:checked ~ .slider__controls label[for="button-2"],
+.slider__button--3:checked ~ .slider__controls label[for="button-3"] {
+  border: 3px solid $black;
+  background-color: $white;
+}
+
+
 // *Gallery
 .gallery__title {
   font-size: 14px;
