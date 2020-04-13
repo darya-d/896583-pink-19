@@ -122,9 +122,50 @@
         </section>
         <!-- *Тарифы на подписку -->
         <section class="tariff">
-          <div class="container">
-            <h2 class="visually-hidden">Тарифы на подписки</h2>
-            <div class="tariff__slider"></div>
+          <h2 class="visually-hidden">Тарифы на подписки</h2>
+          <div class="tariff__wrapper slider">
+            <input class="slider__button slider__button--4 visually-hidden" type="radio" id="button-4" name="tariff-toggle">
+            <input class="slider__button slider__button--5 visually-hidden" type="radio" id="button-5" name="tariff-toggle" checked>
+            <input class="slider__button slider__button--6 visually-hidden" type="radio" id="button-6" name="tariff-toggle">
+            <ul class="tariff__list slider__list">
+              <li class="tariff__item">
+                <p class="tariff__text tariff__text--visible">Розовый фильтр</p>
+                <p class="tariff__text tariff__text--visible">Смайлики</p>
+                <p class="tariff__text tariff__text--visible">Комментарии</p>
+              </li>
+              <li class="tariff__item">
+                <div class="tariff__header">
+                  <h3 class="tariff__title">База</h3>
+                  <p class="tariff__price">1,99 usd</p>
+                </div>
+                <p class="tariff__text tariff__text--on-filter">Розовый фильтр</p>
+                <p class="tariff__text tariff__text--off-smile">Смайлики</p>
+                <p class="tariff__text tariff__text--off-comment">Комментарии</p>
+              </li>
+              <li class="tariff__item">
+                <div class="tariff__header tariff__header--hit">
+                  <h3 class="tariff__title">Стандарт</h3>
+                  <p class="tariff__price">3,99 usd</p>
+                </div>
+                <p class="tariff__text tariff__text--on-filter">Розовый фильтр</p>
+                <p class="tariff__text tariff__text--on-smile">Смайлики</p>
+                <p class="tariff__text tariff__text--off-comment">Комментарии</p>
+              </li>
+              <li class="tariff__item">
+                <div class="tariff__header">
+                  <h3 class="tariff__title">Анлим</h3>
+                  <p class="tariff__price">9,99 usd</p>
+                </div>
+                <p class="tariff__text tariff__text--on-filter">Розовый фильтр</p>
+                <p class="tariff__text tariff__text--on-smile">Смайлики</p>
+                <p class="tariff__text tariff__text--on-comment">Комментарии</p>
+              </li>
+            </ul>
+            <div class="slider__controls slider__controls--tariff">
+              <label for="button-4"></label>
+              <label for="button-5"></label>
+              <label for="button-6"></label>
+            </div>
           </div>
         </section>
         <!-- *Контакты разработчиков -->
