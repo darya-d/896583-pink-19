@@ -50,11 +50,10 @@
   cursor: pointer;
 
   &:hover {
-    opacity: 0.3;
+    background-image: url("../img/icon-menu-cross-pink.svg");
   }
 
   &:active {
-    background-image: url("../img/icon-menu-cross.svg");
     opacity: 0.3;
   }
 }
