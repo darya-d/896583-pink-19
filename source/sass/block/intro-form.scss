@@ -1,0 +1,18 @@
+// Интро блок в form.html
+.intro-form__title {
+  margin: 0;
+  padding: 17px 30px 20px 30px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  text-align: center;
+  color: $white;
+}
+
+.intro-form {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center -65px;
+  background-color: $blue-dark-intro;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 35px;
+}

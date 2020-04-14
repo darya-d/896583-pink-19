@@ -1,0 +1,179 @@
+// Блок тарифы с таблицей в index.html
+.tariff {
+  position: relative;
+  width: 100%;
+  background-color: $grey-light;
+  margin: 0 auto;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: -1px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    // max-width: 660px;
+    height: 140px;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+}
+
+.tariff__wrapper {
+  width: 320px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.tariff__list {
+  display: flex;
+  margin: 0;
+  margin-left: -256px;
+  padding: 0;
+  list-style: none;
+}
+
+.tariff__list li:first-child {
+  display: none;
+}
+
+.tariff__item {
+  position: relative;
+  margin-top: 90px;
+}
+
+.tariff__header {
+  width: 278px;
+  background-color: $blue-dark;
+}
+
+.tariff__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $white;
+  text-transform: uppercase;
+  padding-top: 16px;
+  margin: 0;
+  text-align: center;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+.tariff__price {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: $white;
+  text-transform: uppercase;
+  padding-top: 2px;
+  padding-bottom: 20px;
+  margin: 0;
+  text-align: center;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+.tariff__text {
+  width: 255px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $blue-dark;
+  text-transform: uppercase;
+  padding: 15px 0 14px 21px;
+  margin: 0;
+  background-color: $white;
+  border-bottom: 2px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+.tariff__header--hit {
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 75px;
+    height: 75px;
+    top: 0;
+    left: -1px;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    position: absolute;
+    content: "Хит";
+    width: 75px;
+    height: 75px;
+    top: -10px;
+    left: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $white;
+    text-transform: uppercase;
+    transform: rotate(315deg);
+  }
+}
+
+.tariff__text--on-filter::after {
+  position: absolute;
+  content: " ";
+  width: 32px;
+  height: 32px;
+  top: 116px;
+  right: 19px;
+  background-image: url("../img/icon-yes-green.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.tariff__text--on-smile::after {
+  position: absolute;
+  content: " ";
+  width: 32px;
+  height: 32px;
+  top: 178px;
+  right: 19px;
+  background-image: url("../img/icon-yes-green.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.tariff__text--on-comment::after {
+  position: absolute;
+  content: " ";
+  width: 32px;
+  height: 32px;
+  top: 236px;
+  right: 23px;
+  background-image: url("../img/icon-yes-green.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.tariff__text--off-smile::after {
+  position: absolute;
+  content: " ";
+  width: 26px;
+  height: 26px;
+  top: 176px;
+  right: 20px;
+  background-image: url("../img/icon-no-red.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.tariff__text--off-comment::after {
+  position: absolute;
+  content: " ";
+  width: 26px;
+  height: 26px;
+  top: 236px;
+  right: 20px;
+  background-image: url("../img/icon-no-red.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}

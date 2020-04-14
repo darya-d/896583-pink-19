@@ -1,0 +1,248 @@
+// Форма для пользователей в form.html
+.form__label {
+  display: block;
+  font-size: 14px;
+  line-height: 2.14;
+  text-transform: uppercase;
+  color: $pink;
+  margin-bottom: 5px;
+  padding-left: 22px;
+}
+
+.form__input {
+  box-sizing: border-box;
+  width: 280px;
+  height: 63px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  padding: 15px 20px;
+  margin-bottom: 18px;
+  border: 2px solid $grey-border-color;
+
+  &:hover {
+    border: 2px solid $black;
+  }
+
+  &:focus {
+    border: 2px solid $pink;
+    outline: none;
+  }
+}
+
+// *Form user
+.form__user {
+  padding: 26px 0 23px 0;
+}
+
+// *Form achievements
+.form__achievements {
+  padding-top: 38px;
+  background-color: $grey-light;
+}
+
+.form__achievements-title {
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  color: $pink;
+  margin: 0;
+  padding: 0 25px 43px;
+}
+
+.form__achievements .form__label {
+  position: relative;
+  padding-left: 70px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: initial;
+  color: $blue-dark;
+  cursor: pointer;
+  margin-bottom: 43px;
+}
+// Checkboxes
+input[type="checkbox"] {
+  display: none;
+}
+
+.form__achievements .form__label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -2px;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  border-radius: 3px;
+  border: 2px solid $grey-border-color;
+  background-color: $white;
+}
+
+.form__checkbox:checked + .form__option::after {
+  content: "";
+
+  width: 22px;
+  height: 16px;
+
+  position: absolute;
+  left: 10px;
+  top: 7px;
+
+  background: url("../img/icon-yes-pink.svg") no-repeat;
+  z-index: 2;
+}
+
+.form__achievements .form__label:hover::before {
+  border: 2px solid $black;
+}
+
+.form__achievements .form__label:active::before {
+  outline: none;
+  border: 2px solid $pink;
+}
+
+// *Form contacts
+.form__contacts {
+  padding: 36px 0 22px 0;
+}
+
+
+// *Form app
+.form__app {
+  padding: 38px 0 37px 0;
+  background-color: $grey-light;
+}
+
+.form__app-title {
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  color: $pink;
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.form__app .form__label {
+  position: relative;
+  padding-left: 67px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: initial;
+  color: $blue-dark;
+  cursor: pointer;
+}
+
+.form__app .form__label:not(:last-child) {
+  margin-bottom: 37px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.form__app .form__label::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -2px;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  border-radius: 50%;
+  border: 2px solid $grey-border-color;
+  background-color: $white;
+}
+
+.form__app .form__label:hover::before {
+  border: 2px solid $black;
+}
+
+.form__app .form__label:active::before {
+  outline: none;
+  border: 2px solid $pink;
+}
+
+.form__radio:checked + .form__option::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  z-index: 2;
+  border-radius: 50%;
+  background-color: $pink;
+}
+
+// *Form emotions
+.form__emotions {
+  padding: 33px 0 20px 0;
+}
+
+.form__emotions .form__label {
+  padding: 0;
+  text-align: center;
+  margin-bottom: 11px;
+}
+
+// Textarea
+.form__textarea {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 17px 17px 120px 17px;
+  border: 2px solid #e6e6e6;
+  box-sizing: border-box;
+  resize: none;
+
+  &:hover {
+    border: 2px solid $black;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $pink;
+  }
+}
+
+// Submit
+.form__submit {
+  padding: 25px 0 3px 0;
+}
+
+.form__submit-button {
+  display: block;
+  width: 100%;
+  padding: 22px 0 21px 0;
+  margin-bottom: 42px;
+  font-size: 18px;
+  font-weight: 700;
+  color: $white;
+  text-transform: uppercase;
+  border: none;
+  background-color: $green-btn;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $green-btn-hover;
+  }
+
+  &:active {
+    background-color: $green-btn-active;
+    color: $green-btn-active-text;
+  }
+}
+
+.form__submit-text {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__submit-text--red {
+  color: $pink;
+}

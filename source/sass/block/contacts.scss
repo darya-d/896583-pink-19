@@ -1,0 +1,70 @@
+// Блок контакты в index.html
+.contacts__wrapper {
+  padding: 27px 30px 18px 30px;
+}
+
+.contacts__title {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.contacts__heading {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.contacts__text {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  margin: 0;
+  color: $pink;
+}
+
+// .contacts__email .contacts__text:hover {
+//   color: $blue-dark;
+//   border-bottom: 1px solid $blue-dark;
+// }
+
+// .contacts__email .contacts__text:active {
+//   color: $blue-dark;
+//   opacity: 0.3;
+// }
+
+.contacts__phone {
+  margin-bottom: 25px;
+}
+
+.contacts__email {
+  margin-bottom: 28px;
+}
+
+.contacts__map {
+  position: relative;
+  overflow: hidden;
+  background-color: #eae6dd;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  background-image: url("../img/bg-map-mobile-cut@1x.png");
+}
+
+.contacts__map::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  right: 0;
+  left: 0;
+  height: 100px;
+  margin: auto;
+  background-image: url("../../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}

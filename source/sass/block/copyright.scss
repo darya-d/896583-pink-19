@@ -1,0 +1,34 @@
+// Блок с копирайт Академии в футере
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright__text {
+  display: inline-block;
+  padding-top: 7px;
+  margin-right: 14px;
+  font-weight: normal;
+}
+
+.copyright__logo {
+  display: inline-block;
+  width: 30px;
+  height: 35px;
+  overflow: hidden;
+  background: url("../img/logo-htmlacademy-pink.svg") no-repeat center center;
+
+  &:hover {
+    background-image: url("../img/logo-htmlacademy.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .copyright {
+    margin-top: 15px;
+  }
+}

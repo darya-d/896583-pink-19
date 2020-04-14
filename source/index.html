@@ -1,5 +1,4 @@
 <!-- index.html - главная страница сайта -->
-
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -10,47 +9,54 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="page-header__logo"></a>
-      <nav class="main-nav">
-        <button class="burger burger--opened" type="button" aria-label="Открыть меню"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="#">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <a href="index.html" class="page-header__logo"></a>
+        <nav class="main-nav">
+          <button class="burger burger--opened" type="button" aria-label="Открыть меню"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
         <!-- *Реклама и скачивание -->
         <section class="intro">
           <div class="container">
-            <div class="intro__image-hand"></div>
             <h1 class="visually-hidden">Мобильные приложения Pink</h1>
-            <!-- <h2 class="intro__title">Взгляните на жизнь иначе!</h2> -->
-            <div class="intro__download download">
-              <a class="button download__button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
-              <ul class="download__list">
-                <li class="download__item">
-                  <a class="download__link download__link--apple" href="https://www.apple.com/ru/itunes/"></a>
-                </li>
-                <li class="download__item">
-                  <a class="download__link download__link--android" href="https://play.google.com/store?hl=ru"></a>
-                </li>
-                <li class="download__item">
-                  <a class="download__link download__link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps"></a>
-                </li>
-              </ul>
-              <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+              <div class="intro__wrapper-big">
+                <div class="intro__image-hand"></div>
+                <div class="intro__wrapper">
+                  <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
+                  <div class="intro__download download">
+                    <a class="button download__button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+                    <ul class="download__list">
+                      <li class="download__item">
+                        <a class="download__link download__link--apple" href="https://www.apple.com/ru/itunes/"></a>
+                      </li>
+                      <li class="download__item">
+                        <a class="download__link download__link--android" href="https://play.google.com/store?hl=ru"></a>
+                      </li>
+                      <li class="download__item">
+                        <a class="download__link download__link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps"></a>
+                      </li>
+                    </ul>
+                    <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -81,14 +87,91 @@
         <section class="feedback">
           <div class="container">
             <h2 class="visually-hidden">Отзывы</h2>
-            <div class="feedback__slider"></div>
+            <div class="feedback__wrapper slider">
+              <input class="slider__button slider__button--1 visually-hidden" type="radio" id="button-1" name="toggle" checked>
+              <input class="slider__button slider__button--2 visually-hidden" type="radio" id="button-2" name="toggle">
+              <input class="slider__button slider__button--3 visually-hidden" type="radio" id="button-3" name="toggle">
+              <ul class="feedback__list slider__list">
+                <li class="feedback__item slider__item">
+                  <div class="feedback__item-wrapper">
+                    <h3 class="feedback__title">Николай Петров</h3>
+                    <span class="feedback__id">25 лет, водитель трамвая</span>
+                    <p class="feedback__text"><span class="feedback__quote-hide">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="feedback__quote-hide">»</span></p>
+                  </div>
+                </li>
+                <li class="feedback__item slider__item">
+                  <div class="feedback__item-wrapper">
+                    <h3 class="feedback__title">Петр Николаев</h3>
+                    <span class="feedback__id">25 лет, водитель трамвая</span>
+                    <p class="feedback__text"><span class="feedback__quote-hide">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="feedback__quote-hide">»</span></p>
+                  </div>
+                </li>
+                <li class="feedback__item slider__item">
+                  <div class="feedback__item-wrapper">
+                    <h3 class="feedback__title">Николай Сидоров</h3>
+                    <span class="feedback__id">25 лет, водитель трамвая</span>
+                    <p class="feedback__text"><span class="feedback__quote-hide">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="feedback__quote-hide">»</span></p>
+                  </div>
+                </li>
+              </ul>
+              <div class="feedback__controls">
+                <button class="feedback__button-prev">Предыдущий отзыв</button>
+                <button class="feedback__button-next">Следующий отзыв</button>
+              </div>
+              <div class="slider__controls">
+                <label for="button-1"></label>
+                <label for="button-2"></label>
+                <label for="button-3"></label>
+              </div>
+            </div>
           </div>
         </section>
         <!-- *Тарифы на подписку -->
         <section class="tariff">
-          <div class="container">
-            <h2 class="visually-hidden">Тарифы на подписки</h2>
-            <div class="tariff__slider"></div>
+          <h2 class="visually-hidden">Тарифы на подписки</h2>
+          <div class="tariff__wrapper slider">
+            <input class="slider__button slider__button--4 visually-hidden" type="radio" id="button-4" name="tariff-toggle">
+            <input class="slider__button slider__button--5 visually-hidden" type="radio" id="button-5" name="tariff-toggle" checked>
+            <input class="slider__button slider__button--6 visually-hidden" type="radio" id="button-6" name="tariff-toggle">
+            <ul class="tariff__list slider__list">
+              <li class="tariff__item">
+                <p class="tariff__text tariff__text--visible">Розовый фильтр</p>
+                <p class="tariff__text tariff__text--visible">Смайлики</p>
+                <p class="tariff__text tariff__text--visible">Комментарии</p>
+              </li>
+              <li class="tariff__item">
+                <div class="tariff__header">
+                  <h3 class="tariff__title">База</h3>
+                  <p class="tariff__price">1,99 usd</p>
+                </div>
+                <p class="tariff__text tariff__text--on-filter">Розовый фильтр</p>
+                <p class="tariff__text tariff__text--off-smile">Смайлики</p>
+                <p class="tariff__text tariff__text--off-comment">Комментарии</p>
+              </li>
+              <li class="tariff__item">
+                <div class="tariff__header tariff__header--hit">
+                  <h3 class="tariff__title">Стандарт</h3>
+                  <p class="tariff__price">3,99 usd</p>
+                </div>
+                <p class="tariff__text tariff__text--on-filter">Розовый фильтр</p>
+                <p class="tariff__text tariff__text--on-smile">Смайлики</p>
+                <p class="tariff__text tariff__text--off-comment">Комментарии</p>
+              </li>
+              <li class="tariff__item">
+                <div class="tariff__header">
+                  <h3 class="tariff__title">Анлим</h3>
+                  <p class="tariff__price">9,99 usd</p>
+                </div>
+                <p class="tariff__text tariff__text--on-filter">Розовый фильтр</p>
+                <p class="tariff__text tariff__text--on-smile">Смайлики</p>
+                <p class="tariff__text tariff__text--on-comment">Комментарии</p>
+              </li>
+            </ul>
+            <div class="slider__controls slider__controls--tariff">
+              <label for="button-4"></label>
+              <label for="button-5"></label>
+              <label for="button-6"></label>
+            </div>
           </div>
         </section>
         <!-- *Контакты разработчиков -->
@@ -116,6 +199,31 @@
         </section>
     </main>
 
-    <footer class="page-footer page-footer--hidden"></footer>
+    <footer class="page-footer page-footer--hidden">
+      <div class="container">
+        <div class="page-footer__wrapper">
+          <h2 class="visually-hidden">Наши социальные сети</h2>
+          <a class="page-footer__logo" href="./index.html"></a>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="" class="social__link social__link--twitter" aria-label="ссылка на twitter"></a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link social__link--facebook" aria-label="ссылка на facebook"></a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link social__link--youtube" aria-label="ссылка на youtube"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <span class="copyright__text">Разработано</span>
+            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="ссылка на HTML Academy">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

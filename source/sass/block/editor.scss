@@ -1,0 +1,101 @@
+// Фоторедактор и его элементы в photo.html
+.editor__tools {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0 30px 0;
+}
+
+.editor__tools-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.editor__label {
+  display: block;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+}
+
+.editor__label--crop {
+  background-image: url("../img/icon-editor-crop-greyl.svg");
+
+  &:hover {
+    background-image: url("../img/icon-editor-crop-greyd.svg");
+  }
+
+  &:active {
+    background-image: url("../img/icon-editor-crop-pink.svg");
+  }
+}
+
+.editor__label--fill {
+  background-image: url("../img/icon-editor-fill-greyl.svg");
+
+  &:hover {
+    background-image: url("../img/icon-editor-fill-greyd.svg");
+  }
+
+  &:active {
+    background-image: url("../img/icon-editor-fill-pink.svg");
+  }
+}
+
+.editor__label--contrast {
+  background-image: url("../img/icon-editor-contrast-greyl.svg");
+
+  &:hover {
+    background-image: url("../img/icon-editor-contrast-greyd.svg");
+  }
+
+  &:active {
+    background-image: url("../img/icon-editor-contrast-pink.svg");
+  }
+}
+
+.editor__controls {
+  margin-bottom: 65px;
+}
+
+.editor__button {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 15px 35px;
+  border-radius: 30px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: $grey-light;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.editor__button--submit {
+  color: $pink;
+  border: 3px solid $pink;
+
+  &:hover {
+    color: $white;
+    background-color: $pink;
+  }
+}
+
+.editor__button--cancel {
+  color: #dddee0;
+  border: 3px solid #dddee0;
+
+  &:hover {
+    color: #ced1d4;
+    border: 3px solid #b6babf;
+  }
+
+  &:active {
+    color: #ced1d4;
+    background-color: #b6babf;
+  }
+}

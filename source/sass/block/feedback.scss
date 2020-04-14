@@ -1,0 +1,40 @@
+// Блок с отзывами клиентов в index.html
+.feedback {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.feedback__wrapper {
+  padding-bottom: 42px;
+}
+
+.feedback__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feedback__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  padding: 43px 0 0 0;
+  margin: 0;
+}
+
+.feedback__id {
+  display: none;
+}
+
+.feedback__text {
+  font-style: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 5px 14px;
+}
+
+.feedback__controls {
+  display: none;
+}

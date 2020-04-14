@@ -1,0 +1,36 @@
+// Скролл для редактирования фото в photo.html
+.scroll-bar {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.scroll-bar__range {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  margin: 0 auto;
+  border-radius: 2.5px;
+  background-color: $black;
+  border: 0;
+}
+
+.scroll-bar__range::after {
+  content: "";
+  position: absolute;
+
+  top: -7px;
+  right: 35px;
+  width: 10px;
+  height: 11px;
+  border: solid 2px $pink;
+  border-radius: 50%;
+  background-color: $grey-light;
+  cursor: pointer;
+}
+
+.scroll-bar__range:active::after {
+  content: "";
+
+  background-color: $pink;
+  border-color: $pink;
+}
