@@ -1,0 +1,99 @@
+// Слайдер для блоков tariff и feedback в index.html
+.slider {
+  position: relative;
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__button--1:checked ~ .slider__list .slider__item:first-child {
+  display: block;
+}
+
+.slider__button--2:checked ~ .slider__list .slider__item:nth-child(2) {
+  display: block;
+}
+
+.slider__button--3:checked ~ .slider__list .slider__item:nth-child(3) {
+  display: block;
+}
+
+.slider__button--4:checked ~ .tariff__list {
+  transform: translateX(48%);
+  transition: 0.5s;
+}
+
+.slider__button--5:checked ~ .tariff__list {
+  transform: translateX(0%);
+  transition: 0.5s;
+}
+
+.slider__button--6:checked ~ .tariff__list {
+  transform: translateX(-48%);
+  transition: 0.5s;
+}
+
+.slider__controls {
+  text-align: center;
+}
+
+.slider__controls label {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 0 4px;
+  background-color: #bdc1c7;
+  border: 3px solid $white;
+  vertical-align: middle;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
+}
+
+.slider__controls--tariff {
+  padding-top: 37px;
+  padding-bottom: 46px;
+  text-align: center;
+}
+
+.slider__controls--tariff label {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 0 4px;
+  background-color: #bdc1c7;
+  border: 3px solid $grey-light;
+  vertical-align: middle;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
+}
+
+.slider__button--1:checked ~ .slider__controls label[for="button-1"],
+.slider__button--2:checked ~ .slider__controls label[for="button-2"],
+.slider__button--3:checked ~ .slider__controls label[for="button-3"] {
+  border: 3px solid $black;
+  background-color: $white;
+}
+
+.slider__button--4:checked ~ .slider__controls--tariff label[for="button-4"],
+.slider__button--5:checked ~ .slider__controls--tariff label[for="button-5"],
+.slider__button--6:checked ~ .slider__controls--tariff label[for="button-6"] {
+  border: 3px solid $black;
+  background-color: $grey-light;
+}

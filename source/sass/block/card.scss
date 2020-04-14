@@ -1,0 +1,50 @@
+// Карточки пользователей в блоке gallery в photo.html
+.card__bg,
+.card-panorama__bg {
+  min-width: 100%;
+}
+
+.card__info {
+  padding: 20px 13px 24px 18px;
+  background-color: $grey-light;
+}
+
+.card__user-name {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.card__user-name span {
+  font-size: 12px;
+  font-weight: 300;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.card__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.card__heart-rate {
+  width: 13px;
+  height: 14px;
+  margin-right: 13px;
+  background: url("../img/icon-heart-pink.svg") no-repeat center;
+  border: none;
+  cursor: pointer;
+}
+
+.card__likes {
+  margin: 0;
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $pink;
+}

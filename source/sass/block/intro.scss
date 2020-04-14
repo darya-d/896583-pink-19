@@ -1,0 +1,24 @@
+// Интро блок в index.html
+.intro {
+  margin: 0 auto;
+  padding-bottom: 18px;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center -65px;
+  background-color: $blue-dark-intro;
+}
+
+.intro__image-hand {
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat left bottom;
+  padding-top: 395px;
+  margin-left: -20px;
+  margin-bottom: 29px;
+}
+
+.intro__title {
+  margin: 0;
+  padding: 20px 30px 20px 30px;
+  margin-bottom: 330px;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: $white;
+}

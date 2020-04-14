@@ -1,0 +1,17 @@
+// Блок с фоторедактором в photo.html
+.photo-load__editor {
+  padding: 20px 0 34px;
+  background-color: $grey-light;
+}
+
+.photo-load__intro-text {
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: center;
+  padding: 10px 25px 30px;
+}
+
+.photo-load__image {
+  display: block;
+  margin: 0 auto;
+}

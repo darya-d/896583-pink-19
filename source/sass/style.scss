@@ -1,8 +1,32 @@
-// to all .html
+// to all
 @import "fonts.scss";
 @import "variables.scss";
 @import "mixins.scss";
 @import "global.scss";
+// Header
 @import "block/page-header.scss";
+@import "block/main-nav.scss";
+@import "block/burger.scss";
+// Main
 @import "block/page-main.scss";
+@import "block/intro.scss";
+@import "block/intro-photo.scss";
+@import "block/intro-form.scss";
+@import "block/download.scss";
+@import "block/advantages.scss";
+@import "block/feedback.scss";
+@import "block/slider.scss";
+@import "block/tariff.scss";
+@import "block/contacts.scss";
+@import "block/gallery.scss";
+@import "block/card-panorama.scss";
+@import "block/card.scss";
+@import "block/photo-load.scss";
+@import "block/editor.scss";
+@import "block/scroll-bar.scss";
+@import "block/form-contest.scss";
+@import "block/form.scss";
+// Footer
 @import "block/page-footer.scss";
+@import "block/social.scss";
+@import "block/copyright.scss";
