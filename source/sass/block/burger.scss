@@ -19,3 +19,10 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $width-tablet) {
+  .burger {
+    top: -66px;
+    right: 19px;
+  }
+}

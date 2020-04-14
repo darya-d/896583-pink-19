@@ -32,3 +32,21 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $width-tablet) {
+  .page-header__wrapper {
+    margin: 0 auto;
+    padding-top: 34px;
+  }
+
+  .page-header__logo {
+    width: 150px;
+    height: 40px;
+    padding: 0 0 43px 16px;
+    background-image: url("../img/logo-pink-white-tablet.svg");
+    background-position: top right;
+  }
+
+  top: -66px;
+  right: 19px;
+}
