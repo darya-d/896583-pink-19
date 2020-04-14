@@ -26,3 +26,9 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $width-tablet) {
+  .copyright {
+    margin-top: 15px;
+  }
+}

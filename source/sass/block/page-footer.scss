@@ -21,3 +21,28 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $width-tablet) {
+  .page-footer {
+    min-width: 660px;
+    display: block;
+    padding: 29px 0 37px;
+    margin: 0 auto;
+
+    .container {
+      max-width: 660px;
+      padding: 0 20px;
+      margin: 0 auto;
+    }
+  }
+
+  .page-footer__wrapper {
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+  }
+}
