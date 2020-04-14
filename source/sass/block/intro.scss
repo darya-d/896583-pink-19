@@ -22,3 +22,51 @@
   text-align: center;
   color: $white;
 }
+
+@media (min-width: $width-tablet) {
+  .intro {
+    position: relative;
+    padding-top: 0;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .intro__wrapper-big {
+    position: relative;
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .intro__image-hand {
+    position: absolute;
+    left: 115px;
+    bottom: -18px;
+    width: 510px;
+    height: 545px;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: -150px center;
+    background-size: cover;
+  }
+
+  .intro__wrapper {
+    position: relative;
+    background-color: transparent;
+    width: 300px;
+    padding: 92px 20px 111px;
+    z-index: 1;
+  }
+
+  .intro__title {
+    display: block;
+    font-size: 40px;
+    line-height: 48px;
+    padding: 2px 32px 28px;
+    margin: 0;
+  }
+}

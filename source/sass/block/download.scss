@@ -1,15 +1,16 @@
 // Блок для скачивания приложений в index.html
 .download__button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 15px 35px;
   color: $white;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
   line-height: 1;
-  padding: 15px 35px;
   border: 2px solid $white;
   border-radius: 50px;
-  display: block;
-  margin-bottom: 30px;
 
   &:hover {
     color: $pink;
@@ -68,4 +69,16 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;
+}
+
+@media (min-width: $width-tablet) {
+  .download__button {
+    padding: 15px 0;
+    width: 293px;
+  }
+
+  .download__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
